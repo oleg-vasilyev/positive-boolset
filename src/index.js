@@ -1,3 +1,3 @@
 module.exports = function getPositiveKeysOfBoolset(boolset) {
-  // your solution here
+  return boolset.filter((item, i, arr) => (i+1)%2 && arr[i+1]);
 }
