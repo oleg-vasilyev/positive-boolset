@@ -6,9 +6,9 @@ const array2 = ['C', false, 'R', false,'O', false, 'D', false, 'E', false, 'P', 
 
 
 it('should return correct array', () => {
-    assert.equal(getPositiveKeysOfBoolset(array1), ['C', 'O', 'D', 'E']);
+    assert.deepEqual(getPositiveKeysOfBoolset(array1), ['C', 'O', 'D', 'E']);
 });
 
 it('should return empty set if there is no positive value in boolset', () => {
-    assert.equal(getPositiveKeysOfBoolset(array2), []);
+    assert.deepEqual(getPositiveKeysOfBoolset(array2), []);
 });
